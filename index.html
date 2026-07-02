@@ -7,7 +7,37 @@
   <link rel="stylesheet" href="src/styles.css" />
 </head>
 <body>
-  <div id="app"></div>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><span class="mark">PS</span><div><strong>ProfitSignal</strong><small>Operational Profit Recovery</small></div></div>
+      <div class="nav"><span class="active">Signal Inbox</span><span>Recoveries</span><span>Upload Center</span><span>Integrations</span><span>Settings</span></div>
+      <div class="side-card"><small>Current wedge</small><br><strong>Vendor price variance + delivery payout mismatch</strong></div>
+    </aside>
+    <main class="shell">
+      <header class="topbar"><div><p class="eyebrow">Group overview</p><h1>Recoverable profit signals</h1></div><button class="primary">Upload data</button></header>
+      <section class="metrics">
+        <article><small>Recoverable this month</small><strong>$6,349</strong><span>6 active Signals</span></article>
+        <article><small>Ready to recover</small><strong>$4,204</strong><span>Claim packets available</span></article>
+        <article><small>Avg confidence</small><strong>92%</strong><span>Evidence-backed findings</span></article>
+        <article><small>Recovered YTD</small><strong>$42,830</strong><span>Mock pilot value</span></article>
+      </section>
+      <section class="workspace">
+        <div class="inbox">
+          <article class="signal"><div><span class="pill critical">Critical</span><span class="type">Rebate Signal</span></div><h3>Unclaimed distributor rebate window closing</h3><p>Group-wide</p><footer><strong>$2,410</strong><span>94% confidence</span><span>New</span></footer></article>
+          <article class="signal"><div><span class="pill high">High</span><span class="type">Vendor Signal</span></div><h3>Mozzarella price variance from approved price book</h3><p>BoomBozz Pizza & Watch Bar</p><footer><strong>$1,482</strong><span>98% confidence</span><span>New</span></footer></article>
+          <article class="signal"><div><span class="pill medium">Medium</span><span class="type">Menu Signal</span></div><h3>Pepperoni pizza margin drift below target</h3><p>Westport</p><footer><strong>$924/mo</strong><span>88% confidence</span><span>In Review</span></footer></article>
+          <article class="signal"><div><span class="pill high">High</span><span class="type">Delivery Signal</span></div><h3>DoorDash payout short versus POS tender report</h3><p>One Fourteen Bar</p><footer><strong>$312</strong><span>96% confidence</span><span>Claim Ready</span></footer></article>
+        </div>
+        <div class="detail">
+          <div class="detail-head"><div><span class="type">Rebate Signal</span><h2>Unclaimed distributor rebate window closing</h2><p>Group-wide opportunity</p></div><strong>$2,410</strong></div>
+          <div class="detail-grid"><article><small>Confidence</small><strong>94%</strong></article><article><small>Status</small><strong>New</strong></article><article><small>Owner</small><strong>Unassigned</strong></article></div>
+          <section class="panel"><h3>Evidence</h3><p class="evidence">Purchase volume crossed rebate tier.</p><p class="evidence">No matching credit memo found in accounting export.</p><p class="evidence">Terms expire in 11 days.</p></section>
+          <section class="panel"><h3>Recommended action</h3><p>Generate rebate claim packet and send to distributor rep with purchase-volume proof attached.</p><button class="primary">Generate claim packet</button></section>
+          <section class="panel"><h3>Recovery pipeline</h3><div class="pipeline"><span class="stage current">New</span><span class="stage">Assigned</span><span class="stage">In Review</span><span class="stage">Claim Ready</span><span class="stage">Submitted</span><span class="stage">Recovered</span></div></section>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="src/app.js"></script>
 </body>
 </html>
